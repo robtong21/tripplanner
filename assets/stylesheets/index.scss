@@ -1,0 +1,21 @@
+@mixin make-cols($size) {
+    @for $i from 1 through 12 {
+        .col-lg-#{$i} {
+            width: ((100%/12) * $i) - 1;
+            float: left;
+            padding: 0 2%;
+            vertical-align:top;  
+        }
+
+    }
+}
+
+.container-fluid {
+    background: #695b50;
+}
+
+.navbar-default .navbar-brand,
+.navbar-default .navbar-nav>li>a {
+    color: #fff;
+    /* lighten(#fff, 20%) */
+}

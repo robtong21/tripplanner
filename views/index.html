@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+
+{% block title %}Your Trip{% endblock %}
+
+{% block content %}
+<h1>TESTING TESTING {{message}}</h1>
+
+<span>Hotels:</span>
+<select name="hotel-dropdown">
+    {% for hotel in templateHotels %}
+    <option value = {{hotel.name}}>{{hotel.name}}</option>
+    {% endfor %}
+</select>
+
+<span>Restaurants:</span>
+<select name="restaurant-dropdown">
+    {% for restaurant in templateRestaurants %}
+    <option value = {{restaurant.name}}>{{restaurant.name}}</option>
+    {% endfor %}
+</select>
+
+<span>Activities:</span>
+<select name="activity-dropdown">
+    {% for activity in templateActivities %}
+    <option value = {{activity.name}}>{{activity.name}}</option>
+    {% endfor %}
+</select>
+
+{% endblock %}

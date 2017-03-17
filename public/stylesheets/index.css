@@ -1,0 +1,7 @@
+.container-fluid {
+  background: #695b50; }
+
+.navbar-default .navbar-brand,
+.navbar-default .navbar-nav > li > a {
+  color: #fff;
+  /* lighten(#fff, 20%) */ }
